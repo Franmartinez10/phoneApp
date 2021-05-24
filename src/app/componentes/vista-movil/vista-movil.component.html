@@ -1,0 +1,97 @@
+
+
+<div class="banner relative">
+    <div class="col-center marginTop10">
+        <img [src]="this.phone.imageFileName" class="image" >
+
+    </div>
+ <div class="circle-cruz" routerLink="/app-listado-movil"><</div>
+</div>
+
+
+ <div class="col-left  menu-item relative ">
+     <div class="col-right " style="width: inherit;">
+        <button class=" botonAnadir marginRight32 marginTop10" routerLink="anadir-phone">editar
+        </button> 
+     </div>
+    <div class="row-left caracteristicas marginTop10">  
+        <p>{{phone.manufacturer}}</p> 
+        <p class="marginLeft32 colorDetalle">color: </p><div [ngStyle]="{ 'background-color': phone.color}"  class=" col-center" [ngClass]="phone.color != 'white' ? 'color' : 'colorWhite'">{{phone.color}}</div>      
+    </div>
+</div>
+    <div class="col-left menu-item relative">
+        <div class="row-left ">
+                <div class="title">
+                    {{phone.name}}
+                </div>
+                <div class="title absoluteRight">{{phone.price | price}}</div>
+        </div>
+    
+    </div>
+
+  
+    <!-- <div class="hr"></div> -->
+
+
+    <div class="hr"></div>
+    <div class="row-left paddingLeft20">
+
+            <div class="col-left  menu-item">
+                <div class="row-center detalles">
+                    SCREEN:
+                </div>
+                <div class="row-center detallesItem">
+                    {{phone.screen | inch}}       
+                </div>
+            </div>
+            <div class="col-left  menu-item">
+                <div class="row-center detalles">
+                    PROCESSOR:
+                </div>
+                <div class="row-center detallesItem">
+                    {{phone.processor}}       
+                </div>
+            </div>
+            <div class="col-left  menu-item">
+                <div class="row-center detalles">
+                    RAM:
+                </div>
+                <div class="row-center detallesItem">
+                    {{phone.ram | gb}}       
+                </div>
+            </div>
+
+    </div>
+    <div class="hr"></div>
+
+
+    <div class="col-left  menu-item">
+        <div class="row-left description">
+            Descripcion:
+        </div>
+        <div class="row-lef description">
+                <p>{{phone.description}}</p>                
+        </div>
+    </div>
+
+
+  
+
+     
+
+
+    <div class="hr"></div>
+  
+
+    
+
+
+   
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+
+
+<div class="banner relative">
+    <div class="col-center marginTop10">
+        <img src="assets/upload.png" class="image" >
+
+    </div>
+ <div class="circle-cruz" routerLink="/app-listado-movil"><img src="assets/close.svg" class="icon"></div>
+</div>
+
+
+ <div class="col-left  menu-item relative ">
+     <div class="col-right " style="width: inherit;">
+        <button class=" botonModificar marginRight32 marginTop10" (click)="anadirPhone(imageFileName.value,manufacturer.value,color.value,name.value,price.valueAsNumber,screen.valueAsNumber,processor.value,ram.valueAsNumber,description.value)" >Guardar telefono
+        </button> 
+     </div>
+     <div class="row-left caracteristicas ">  
+        <p class=" colorDetalle">photo url: </p> <input class="input marginLeft12" [placeholder]="this.nuevoPhone.imageFileName" #imageFileName>
+        </div>
+     <div class="row-left caracteristicas ">  
+        <p class=" colorDetalle">manufacturer: </p> <input class="input marginLeft12" [placeholder]="this.nuevoPhone.manufacturer" #manufacturer>
+        </div>
+    <div class="row-left caracteristicas ">  
+        <p class=" colorDetalle">color: </p><input class="input marginLeft12" [placeholder]="this.nuevoPhone.color" #color>      
+    </div>
+</div>
+    <div class="col-left menu-item relative">
+        <div class="row-left ">
+                <div class="title col-left">
+                    <input class="titleInput sizeTitle" [placeholder]="this.nuevoPhone.name" #name>
+                </div>
+                <div class="title col-left">
+                <input class="titleInput absoluteRight sizePrice" type="number" [placeholder]="this.nuevoPhone.price | price" #price>
+                </div>
+        </div>
+     
+    
+    </div>
+
+  
+    <!-- <div class="hr"></div> -->
+
+
+    <div class="hr"></div>
+    <div class="row-left paddingLeft20">
+
+            <div class="col-left  menu-item">
+                <div class="row-center detalles">
+                    SCREEN:
+                </div>
+                <div class="row-center detallesItem">
+                    <input [placeholder]="this.nuevoPhone.screen | inch" type="number" #screen>       
+                </div>
+            </div>
+            <div class="col-left  menu-item">
+                <div class="row-center detalles">
+                    PROCESSOR:
+                </div>
+                <div class="row-center detallesItem">
+                    <input [placeholder]="this.nuevoPhone.processor " #processor>       
+                </div>
+            </div>
+            <div class="col-left  menu-item">
+                <div class="row-center detalles">
+                    RAM:
+                </div>
+                <div class="row-center detallesItem">
+                    <input [placeholder]="this.nuevoPhone.ram | gb" type="number" #ram>       
+                </div>
+            </div>
+
+    </div>
+    <div class="hr"></div>
+
+
+    <div class="col-left  menu-item">
+        <div class="row-left description">
+            Descripcion:
+        </div>
+        <div class="row-lef description">
+                <textarea #description>{{this.nuevoPhone.description}}</textarea>               
+        </div>
+    </div>
+ 
+    <div class="hr"></div>
+  
+
+    
+
+
+   
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+
+
+
+
+    <div class="col-center">
+        <div class="col-center iphoneCard">
+            <img src="assets/logo.png" class="logo" routerLink="app-listado-movil">
+            <div class="busqueda col-center" > 
+                <router-outlet></router-outlet>
+
+                <div class=" col-center  colorWhite"*ngIf="isIntro">
+                    <div class="col-center  marginTop10 ">
+                        Los ultimos smartphones del mercado:
+                    </div>
+                    <div class="spinner">
+                        <img src="assets/833.gif" *ngIf="isSpinner">
+                    </div>
+                    <div>
+                        <img src="https://thumbs.dreamstime.com/b/historieta-feliz-smartphone-47782715.jpg" class="image">
+                    </div>
+                   <div class="marginBottom10">
+                    <div class="button6" (click)="cargarTelefonos()">
+                        Buscar telefonos
+                    </div>
+                   </div>
+                    
+                </div>                       
+                        <div class="col-center">
+                        </div>
+                        <div class=" col-center menu-item-expandible colorWhite" >
+                            <div class="row-left widthMenu" >
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>

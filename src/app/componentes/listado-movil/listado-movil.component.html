@@ -1,0 +1,41 @@
+
+                <div class="listado col-center" *ngIf="!isIntro" >
+                    <div class="row-left marginBottom10 relative" style="width: inherit;">
+                            <input class="input marginRight12"  placeholder="buscar..." [(ngModel)]="buscar" (input)=busqueda()>
+                            <button class="botonAnadir absoluteRight" routerLink="nuevo-phone">Añadir Smartphone</button>
+                    </div>
+                    <div class="row-left marginBottom10 relative" style="width: inherit;">
+                        <select name="filtroDinero" class="input"  [(ngModel)]="filteredManufacturer" (change)="filterManufacturer()">
+                            <option disabled selected>Busca una marca</option>
+                            <option   *ngFor="let phone of marcas "  [value]="phone">{{phone }}</option>
+                            </select>
+                            <button class="botonClose" (click)="cargarTelefonos();filteredManufacturer = '' "  ><img src="assets/close.svg" class="icon"></button>
+                        <div class="filtroDinero absoluteRight" (click)="sortDinero()">precio<img src="assets/right-arrow.svg" class="icon marginLeft12" [ngClass]="isPricing == true ? 'arrowArriba' : 'arrowAbajo' " ></div>
+                       
+
+                </div>
+                    
+                    <div class="lista col-left" >
+                        <div *ngFor="let phone of (this.phonesFiltered) ;let i = index; " class="listItem row-left widthInherit" (click)="cargarVista(i)">
+                            <div class="col-center">
+                                <img [src]="phone.imageFileName || 'https://image.freepik.com/vector-gratis/smartphone-vector-realista_66219-1479.jpg'" class="thumbList" >                                
+                            </div>
+                            <div class="col-center marginLeft12">
+                                {{phone.name}}
+
+                            </div>
+                            <div class="col-center marginLeft12   textGrayRegular20">
+                                {{phone.manufacturer}}
+
+                            </div>
+                            <div class="col-center marginLeft12   textGrayRegular20" *ngIf="phone.price">
+                                {{phone.price | price}}
+
+                            </div>
+                            <div class="custom-hr"></div>
+                        </div> 
+                         
+                    </div>
+                </div>
+
+                   

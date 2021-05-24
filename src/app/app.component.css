@@ -1,0 +1,48 @@
+.busqueda
+{
+    height: auto;
+    width: 340px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    background-color: white;
+
+/*     background-color:  rgba(178, 193, 198, 0.185);;
+ */    overflow-x: hidden;
+    overflow-y:auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+.button6{
+    display: inline-block;
+        padding :0.9em 4.4em;
+        margin:0 0.3em 0.3em 0;
+        border-radius:0.15em;
+        box-sizing: border-box;
+        text-decoration:none;
+        text-transform:uppercase;
+        font-weight:400;
+        color: #FFFFFF;
+        background-color:coral;
+        box-sizing:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+        text-align:center;
+        position:relative;
+        }
+        .button6:active{
+        top:0.1em;
+        }
+        @media all and (max-width:30em){
+             .button6{
+            display:block;
+            margin:0.4em auto;
+            }
+        }
+
+.spinner img{
+    width: 80px;
+
+}
+.spinner{
+    margin-bottom: 20px;
+}
