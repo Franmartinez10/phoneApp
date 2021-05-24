@@ -11,6 +11,10 @@ import { NuevoPhoneComponent } from './componentes/nuevo-phone/nuevo-phone.compo
 const routes: Routes = [
 
     {
+     
+         path: '',
+        component: AppComponent,
+    },  {   
         path: 'app-vista-movil',
         component: VistaMovilComponent,
     },  {
