@@ -6,9 +6,9 @@ import { Phone } from '../modelos/phone';
   providedIn: 'root'
 })
 export class PhonesService {
-
-  private url = 'http://localhost:300/phones'
-  public phoneDetail:Phone = new Phone(0,"","","","",0,"",0,"",0)
+  private url = 'https://thephonelistapi.herokuapp.com/phones'
+/*   private url = 'http://localhost:300/phones'
+ */  public phoneDetail:Phone = new Phone(0,"","","","",0,"",0,"",0)
   public phones:Phone[] = []
 
   constructor(private http: HttpClient) { }
