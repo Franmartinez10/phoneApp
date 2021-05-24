@@ -67,6 +67,7 @@ public isModifing:boolean = false
       })
     }
     eliminarPhone(){
+      let i = 0
       this.phoneService.delPhone(this.phoneService.phoneDetail.id).subscribe((data:any)=>{
         if(data.type == 1){
           this.router.navigate(['app-vista-movil/anadir-phone/tlf-borrado'])
