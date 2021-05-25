@@ -61,6 +61,7 @@
     background-color: #F8FBFB;
     width: inherit;
     border-radius: 20px;
+    margin-bottom: 10px;
 
 }
 .listado{
@@ -69,7 +70,7 @@
 }
 .absoluteRight{
     position: absolute;
-    right: 0px;
+    right: 10px;
 }
 .relative{
     position: relative;

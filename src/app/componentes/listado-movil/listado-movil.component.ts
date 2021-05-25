@@ -76,8 +76,15 @@ export class ListadoMovilComponent implements OnInit {
   }
 
 
-  cargarVista(i:number){
+  cargarVista(id:number){
+    for(let i = 0; i<this.phonesService.phones.length; i++){
+      console.log(this.phonesService.phones[i].id);
+      
+      if(this.phonesService.phones[i].id === id){
     this.phonesService.phoneDetail = this.phonesService.phones[i]
     this.router.navigate(["app-vista-movil"])
+      }
+    }
+    
   }
 }

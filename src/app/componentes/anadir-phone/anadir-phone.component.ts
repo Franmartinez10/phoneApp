@@ -61,7 +61,7 @@ public isModifing:boolean = false
 
       this.phoneService.putPhone(this.phoneService.phoneDetail).subscribe((data:any) =>{
         if(data.type ===1){
-          this.router.navigate(['app-vista-movil'])
+          this.router.navigate(['app-listado-movil'])
         }
         
       })

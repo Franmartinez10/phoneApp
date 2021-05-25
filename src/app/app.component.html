@@ -18,6 +18,9 @@
                     <div>
                         <img src="https://thumbs.dreamstime.com/b/historieta-feliz-smartphone-47782715.jpg" class="image">
                     </div>
+                    <div class="col-center mensaje-container" *ngIf="!isLoading" (click)="isLoading = true">
+                        Error de conexion, prueba hasta que el api-rest se despierte.
+                    </div>
                    <div class="marginBottom10">
                     <div class="button6" (click)="cargarTelefonos()">
                         Buscar telefonos
@@ -25,8 +28,7 @@
                    </div>
                     
                 </div>                       
-                        <div class="col-center">
-                        </div>
+                    
                         <div class=" col-center menu-item-expandible colorWhite" >
                             <div class="row-left widthMenu" >
                             </div>

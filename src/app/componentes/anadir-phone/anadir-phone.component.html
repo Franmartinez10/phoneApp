@@ -11,8 +11,8 @@
 
  <div class="col-left  menu-item relative ">
      <div class="col-right " style="width: inherit;">
-        <button class=" botonModificar marginRight32 marginTop10" (click)="modificarPhone(imageFileName.value,manufacturer.value,color.value,name.value,price.valueAsNumber,screen.valueAsNumber,processor.value,ram.valueAsNumber,description.value)" [disabled]="isModifing">Guardar cambios
-        </button> 
+        <div class=" botonModificar marginRight32 marginTop10" (click)="modificarPhone(imageFileName.value,manufacturer.value,color.value,name.value,price.valueAsNumber,screen.valueAsNumber,processor.value,ram.valueAsNumber,description.value)">Guardar cambios
+        </div> 
      </div>
      <div class="row-left caracteristicas ">  
         <p class=" colorDetalle">photo url: </p> <input class="input marginLeft12" [placeholder]="this.phoneService.phoneDetail.imageFileName" #imageFileName>
