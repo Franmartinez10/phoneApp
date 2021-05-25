@@ -13,7 +13,7 @@ const routes: Routes = [
     {
      
         path: '',
-        component: AppComponent,
+        component: ListadoMovilComponent,
     },
     {     
         path: 'app-vista-movil',
